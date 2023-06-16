@@ -1,0 +1,2 @@
+C:\Users\alexy\Documents\Mahjonk\Mahjong\Mahjong\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+C:\Users\alexy\Documents\Mahjonk\Mahjong\Mahjong\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

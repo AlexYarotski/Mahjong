@@ -131,6 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilesType: 1
   _boardTiles: {fileID: 0}
+  _timeAppearance: 1
+  _timeDisappearance: 1.5
 --- !u!65 &8210493496016963994
 BoxCollider:
   m_ObjectHideFlags: 0

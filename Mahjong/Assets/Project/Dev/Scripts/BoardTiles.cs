@@ -6,6 +6,7 @@ using UnityEngine;
 public class BoardTiles : MonoBehaviour
 {
     public static event Action Lose = delegate {  }; 
+    public static event Action<Tiles> ChosePair = delegate {  }; 
 
     private const float StartPosAxisX = -8;
 
@@ -64,9 +65,6 @@ public class BoardTiles : MonoBehaviour
     {
         TilesList.Sort((x, y) => x.transform.position.x.CompareTo(y.transform.position.x));
         
-        //TilesList.Add(tiles);
-        //Check(tiles);
-        
         if (TilesList[^1].transform.position != PositionTilesList[TilesList.Count - 1])
         {
             return;
@@ -79,6 +77,7 @@ public class BoardTiles : MonoBehaviour
             for (int i = 0; i < identicalTilesList.Length; i++)
             {
                 identicalTilesList[i].Disable();
+                ChosePair(identicalTilesList[i]);
             }
 
             MoveTiles(identicalTilesList);

@@ -1,13 +1,14 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - BoardTiles
+    - Level
     - LossingWindow
     - Project.Dev.Scripts.GameWindow
-    - Project.Dev.Scripts.Level
-    - Project.Dev.Scripts.WinWindow
     - SelectTiles
-    - Tiles
+    - Tile
+    - TileBoard
+    - TileCounter
+    - WinWindow
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
     Unity.Rider.Editor.dll:
@@ -66,7 +67,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve: []
   sceneClasses:
-    Assets/Project/Scenes/SampleScene.unity:
+    Assets/Project/Scenes/Level1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -100,43 +101,124 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1550}
     - Class: 114
-      Script: {instanceID: 2212}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 2638}
+      Script: {instanceID: 2214}
     - Class: 114
-      Script: {instanceID: 2650}
+      Script: {instanceID: 2640}
     - Class: 114
-      Script: {instanceID: 2878}
+      Script: {instanceID: 2652}
     - Class: 114
-      Script: {instanceID: 3178}
+      Script: {instanceID: 2880}
     - Class: 114
-      Script: {instanceID: 3532}
+      Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 4146}
+      Script: {instanceID: 3534}
     - Class: 114
-      Script: {instanceID: 4264}
+      Script: {instanceID: 4148}
     - Class: 114
-      Script: {instanceID: 4544}
+      Script: {instanceID: 4266}
     - Class: 114
-      Script: {instanceID: 5248}
+      Script: {instanceID: 4546}
     - Class: 114
-      Script: {instanceID: 5320}
+      Script: {instanceID: 5252}
     - Class: 114
-      Script: {instanceID: 5346}
+      Script: {instanceID: 5324}
     - Class: 114
-      Script: {instanceID: 5824}
+      Script: {instanceID: 5350}
     - Class: 114
-      Script: {instanceID: 5946}
+      Script: {instanceID: 5948}
     - Class: 114
-      Script: {instanceID: 6102}
+      Script: {instanceID: 6104}
     - Class: 114
-      Script: {instanceID: 6446}
-    - Class: 114
-      Script: {instanceID: 7772}
+      Script: {instanceID: 6448}
     - Class: 114
       Script: {instanceID: 7774}
     - Class: 114
-      Script: {instanceID: 8224}
+      Script: {instanceID: 7776}
+    - Class: 114
+      Script: {instanceID: 8208}
+    - Class: 114
+      Script: {instanceID: 8228}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Project/Scenes/Level2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1550}
+    - Class: 114
+      Script: {instanceID: 1600}
+    - Class: 114
+      Script: {instanceID: 2640}
+    - Class: 114
+      Script: {instanceID: 2652}
+    - Class: 114
+      Script: {instanceID: 2880}
+    - Class: 114
+      Script: {instanceID: 3180}
+    - Class: 114
+      Script: {instanceID: 5252}
+    - Class: 114
+      Script: {instanceID: 5324}
+    - Class: 114
+      Script: {instanceID: 5350}
+    - Class: 114
+      Script: {instanceID: 5948}
+    - Class: 114
+      Script: {instanceID: 6104}
+    - Class: 114
+      Script: {instanceID: 6448}
+    - Class: 114
+      Script: {instanceID: 7774}
+    - Class: 114
+      Script: {instanceID: 7776}
+    - Class: 114
+      Script: {instanceID: 8208}
+    - Class: 114
+      Script: {instanceID: 8228}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -168,6 +250,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 09f9243c1844117cd9633fa0c0267666
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TileBoard
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -280,7 +368,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Project.Dev.Scripts
+    namespaceName: 
     className: Level
   - hash:
       serializedVersion: 2
@@ -764,10 +852,10 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: d359848677abaefa99bd6c2d77112ab2
+      Hash: 8266ce5b6a3415f5771d5d047953453a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Tiles
+    className: Tile
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -788,9 +876,9 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: fbcfd7a76f961f9dfed9ea3192e5d367
+      Hash: 5f931937d60be53172bab89cfefec9ea
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Project.Dev.Scripts
+    namespaceName: 
     className: WinWindow
   - hash:
       serializedVersion: 2
@@ -834,12 +922,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
-  - hash:
-      serializedVersion: 2
-      Hash: 8f1ab7cdb57846f8a0d53546c5677d3c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BoardTiles
   - hash:
       serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
@@ -1148,13 +1230,19 @@ ScriptsOnlyBuild:
     className: VertexZoom
   - hash:
       serializedVersion: 2
+      Hash: bcd37ba414aefa1d607339cc45de3272
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TileCounter
+  - hash:
+      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: aaeb99d265f959601bf4df997503231a
+      Hash: 4a984642df1052d365b086e0ecf5b672
     assemblyName: Assembly-CSharp.dll
     namespaceName: Project.Dev.Scripts
     className: GameWindow
@@ -1190,5 +1278,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 13
   scenePathNames:
-  - Assets/Project/Scenes/SampleScene.unity
+  - Assets/Project/Scenes/Level1.unity
+  - Assets/Project/Scenes/Level2.unity
   playerPath: C:/Users/alexy/Desktop/Unity/Project/Mahjong.apk

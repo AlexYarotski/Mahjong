@@ -6,6 +6,6 @@
     Watermelon = 3,
     Lemon = 4,
     Orange = 5,
-    Blue = 6,
-    Pink = 6
+    Blueberry = 6,
+    Pitaya = 7
 }

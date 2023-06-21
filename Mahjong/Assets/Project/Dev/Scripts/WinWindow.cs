@@ -9,7 +9,7 @@ public class WinWindow : MonoBehaviour
     private readonly Vector3 StartSize = new Vector3(1, 1, 1);
 
     [SerializeField]
-    private TextMeshProUGUI _youWin = null;
+    private TextMeshProUGUI _winTMP = null;
 
     [SerializeField]
     private float _timeAppearance = 0;
@@ -27,15 +27,15 @@ public class WinWindow : MonoBehaviour
         _restart.gameObject.SetActive(false);
         _nextLevel.gameObject.SetActive(false);
         
-        _youWin.rectTransform.localScale = Vector3.zero;
+        _winTMP.rectTransform.localScale = Vector3.zero;
     }
 
-    public void OpenWindow()
+    public void Open()
     {
         _restart.gameObject.SetActive(true);
         _nextLevel.gameObject.SetActive(true);
         
-        _youWin.rectTransform.DOScale(StartSize, _timeAppearance);
+        _winTMP.rectTransform.DOScale(StartSize, _timeAppearance);
     }
 
     private void Restart()

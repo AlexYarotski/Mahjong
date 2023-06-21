@@ -34,7 +34,7 @@ namespace Project.Dev.Scripts
         private void ScoreTile_RemovedAllTiles()
         {
             _restart.gameObject.SetActive(false);
-            _winWindow.OpenWindow();
+            _winWindow.Open();
         }
 
         private void BoardTiles_Lose()

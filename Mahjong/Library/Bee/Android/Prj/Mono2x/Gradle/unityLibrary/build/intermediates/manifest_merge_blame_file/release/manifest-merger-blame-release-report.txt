@@ -24,103 +24,106 @@
 17    <uses-permission android:name="android.permission.INTERNET" />
 17-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-65
 17-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:20-62
-18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-77
-18-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:20-74
-19
-20    <uses-feature
-20-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-88
-21        android:name="android.hardware.touchscreen"
-21-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-60
-22        android:required="false" />
-22-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:61-85
-23    <uses-feature
-23-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:3-99
-24        android:name="android.hardware.touchscreen.multitouch"
-24-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:17-71
-25        android:required="false" />
-25-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:72-96
-26    <uses-feature
-26-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:3-108
-27        android:name="android.hardware.touchscreen.multitouch.distinct"
-27-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-80
-28        android:required="false" />
-28-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:81-105
-29
-30    <application android:extractNativeLibs="true" >
-30-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-17:17
-30-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
-31        <activity
-31-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
-32            android:name="com.unity3d.player.UnityPlayerActivity"
-32-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
-33            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-33-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:180-361
-34            android:hardwareAccelerated="false"
-34-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:397-432
-35            android:launchMode="singleTask"
-35-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:148-179
-36            android:resizeableActivity="false"
-36-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-396
-37            android:screenOrientation="fullUser"
-37-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-147
-38            android:theme="@style/UnityThemeSelector" >
-38-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
-39            <intent-filter>
-39-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
-40                <action android:name="android.intent.action.MAIN" />
-40-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
-40-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
-41
-42                <category android:name="android.intent.category.LAUNCHER" />
-42-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
-42-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
-43            </intent-filter>
-44
-45            <meta-data
-45-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
-46                android:name="unityplayer.UnityActivity"
-46-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
-47                android:value="true" />
-47-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
-48            <meta-data
-48-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
-49                android:name="android.notch_support"
-49-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
-50                android:value="true" />
-50-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
-51        </activity>
-52
-53        <meta-data
-53-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
-54            android:name="unity.splash-mode"
-54-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
-55            android:value="0" />
-55-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
-56        <meta-data
-56-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
-57            android:name="unity.splash-enable"
-57-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
-58            android:value="True" />
-58-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
-59        <meta-data
-59-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
-60            android:name="unity.launch-fullscreen"
-60-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
-61            android:value="True" />
-61-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
-62        <meta-data
-62-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
-63            android:name="unity.allow-resizable-window"
-63-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
-64            android:value="False" />
-64-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
-65        <meta-data
-65-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
-66            android:name="notch.config"
-66-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
-67            android:value="portrait|landscape" />
-67-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
-68    </application>
-69
-70</manifest>
+18    <uses-permission android:name="android.permission.VIBRATE" />
+18-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-64
+18-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:20-61
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-77
+19-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:20-74
+20
+21    <uses-feature
+21-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:3-88
+22        android:name="android.hardware.touchscreen"
+22-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:17-60
+23        android:required="false" />
+23-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:61-85
+24    <uses-feature
+24-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:3-99
+25        android:name="android.hardware.touchscreen.multitouch"
+25-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:17-71
+26        android:required="false" />
+26-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:72-96
+27    <uses-feature
+27-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:3-108
+28        android:name="android.hardware.touchscreen.multitouch.distinct"
+28-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-80
+29        android:required="false" />
+29-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:81-105
+30
+31    <application android:extractNativeLibs="true" >
+31-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-17:17
+31-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+32        <activity
+32-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+33            android:name="com.unity3d.player.UnityPlayerActivity"
+33-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+34            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+34-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:180-361
+35            android:hardwareAccelerated="false"
+35-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:397-432
+36            android:launchMode="singleTask"
+36-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:148-179
+37            android:resizeableActivity="false"
+37-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-396
+38            android:screenOrientation="fullUser"
+38-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-147
+39            android:theme="@style/UnityThemeSelector" >
+39-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
+40            <intent-filter>
+40-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
+41                <action android:name="android.intent.action.MAIN" />
+41-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+41-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+43-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+44            </intent-filter>
+45
+46            <meta-data
+46-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
+47                android:name="unityplayer.UnityActivity"
+47-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
+48                android:value="true" />
+48-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
+49            <meta-data
+49-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+50                android:name="android.notch_support"
+50-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+51                android:value="true" />
+51-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+52        </activity>
+53
+54        <meta-data
+54-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+55            android:name="unity.splash-mode"
+55-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+56            android:value="0" />
+56-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+57        <meta-data
+57-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+58            android:name="unity.splash-enable"
+58-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
+59            android:value="True" />
+59-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+60        <meta-data
+60-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+61            android:name="unity.launch-fullscreen"
+61-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+62            android:value="True" />
+62-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+63        <meta-data
+63-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+64            android:name="unity.allow-resizable-window"
+64-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
+65            android:value="False" />
+65-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+66        <meta-data
+66-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+67            android:name="notch.config"
+67-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+68            android:value="portrait|landscape" />
+68-->D:\Mahj\Mahjong\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+69    </application>
+70
+71</manifest>

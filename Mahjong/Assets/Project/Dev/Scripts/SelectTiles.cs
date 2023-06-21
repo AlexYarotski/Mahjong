@@ -20,5 +20,14 @@ public class SelectTiles : MonoBehaviour
                 hitInfo.collider.GetComponent<Tile>().Move();
             }
         }
+        else if (Input.touchCount > 0)
+        {
+            Ray ray = _camera.ScreenPointToRay(Input.GetTouch(0).position);
+
+            if (Physics.Raycast(ray, out RaycastHit hitInfo, Int32.MaxValue, _layerMask))
+            {
+                hitInfo.collider.GetComponent<Tile>().Move();
+            }
+        }
     }
 }

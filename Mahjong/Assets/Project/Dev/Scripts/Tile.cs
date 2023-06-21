@@ -17,13 +17,6 @@ public class Tile : MonoBehaviour
     
     public TilesType TilesType => _tilesType;
 
-    private Sequence _sequence = null;
-    
-    private void OnDisable()
-    {
-        _sequence?.Kill();
-    }
-
     public void Move()
     {
         transform.DOMove(_tileBoard.GetPosition(this), _timeAppearance)
@@ -39,9 +32,7 @@ public class Tile : MonoBehaviour
 
     public void Disable()
     {
-        _sequence = DOTween.Sequence();
-
-        _sequence.Append(transform.DOScale(SizeDecrease, _timeDecrease))
+        transform.DOScale(SizeDecrease, _timeDecrease)
             .OnComplete(() => gameObject.SetActive(false));
     }
 }

@@ -354,7 +354,6 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/Project/Dev/Scripts/Extension/FloatExtantion.cs"
 "Assets/Project/Dev/Scripts/GameWindow.cs"
 "Assets/Project/Dev/Scripts/Level.cs"
 "Assets/Project/Dev/Scripts/LossingWindow.cs"

@@ -1,4 +1,3 @@
-using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -23,7 +22,6 @@ public class LossingWindow : MonoBehaviour
     
     private void Restart()
     {
-        DOTween.KillAll();
         SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
-using Project.Dev.Scripts.Extension;
 using UnityEngine;
 
 public class TileBoard : MonoBehaviour
@@ -20,11 +19,6 @@ public class TileBoard : MonoBehaviour
     [SerializeField]
     private List<Vector3> PositionList = new List<Vector3>();
 
-    private void OnDisable()
-    {
-        DOTween.PauseAll();
-    }
-
     public Vector3 GetPosition(Tile tile)
     {
         TilesList.Sort((x, y) => x.transform.position.x.CompareTo(y.transform.position.x));
@@ -33,14 +27,13 @@ public class TileBoard : MonoBehaviour
 
         if (CheckIdenticalTiles(tile))
         {
-            MoveTilesRight(tile);
+            MoveTilesToRight(tile);
 
             CheckLose(tile);
 
             return GetPositionTiles(tile);
         }
 
-        
         CheckLose(tile);
             
         return PositionList[TilesList.Count - 1];
@@ -58,35 +51,6 @@ public class TileBoard : MonoBehaviour
         }
 
         CheckLose(tile);
-    }
-
-    private void CheckLose(Tile tile)
-    {
-        if (TilesList.Count == PositionList.Count)
-        {
-            if (tile == TilesList[^1])
-            {
-                if (!CheckPair())
-                {
-                    Lose();
-                }
-            }
-        }
-    }
-
-    private bool CheckPair()
-    {
-        for (var i = 0; i < TilesList.Count; i++)
-        {
-            var countIdentical = TilesList.FindAll(tl => tl.TilesType == TilesList[i].TilesType).Count;
-
-            if (countIdentical >= _quantityTilesInPairs)
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 
     private void RemoveIdenticalTile(List<Tile> quantityIdenticalTiles)
@@ -114,10 +78,10 @@ public class TileBoard : MonoBehaviour
             }
         }
 
-        MoveTilesLeft();
+        MoveTilesToLeft();
     }
 
-    private void MoveTilesLeft()
+    private void MoveTilesToLeft()
     {
         for (int i = 0; i < TilesList.Count; i++)
         {
@@ -158,7 +122,7 @@ public class TileBoard : MonoBehaviour
         return PositionList[indexLastIdenticalTile + 1];
     }
 
-    private void MoveTilesRight(Tile tile)
+    private void MoveTilesToRight(Tile tile)
     {
         var tilesOnBoard = GetTilesOnBoardList();
         var indexLastIdenticalTile = tilesOnBoard.FindLastIndex(tb => tb.TilesType == tile.TilesType);
@@ -184,5 +148,34 @@ public class TileBoard : MonoBehaviour
         }
 
         return tilesOnBoard;
+    }
+    
+    private void CheckLose(Tile tile)
+    {
+        if (TilesList.Count == PositionList.Count)
+        {
+            if (tile == TilesList[^1])
+            {
+                if (!CheckPair())
+                {
+                    Lose();
+                }
+            }
+        }
+    }
+
+    private bool CheckPair()
+    {
+        for (var i = 0; i < TilesList.Count; i++)
+        {
+            var countIdentical = TilesList.FindAll(tl => tl.TilesType == TilesList[i].TilesType).Count;
+
+            if (countIdentical >= _quantityTilesInPairs)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

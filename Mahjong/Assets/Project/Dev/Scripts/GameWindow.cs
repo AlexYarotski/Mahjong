@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Project.Dev.Scripts
 {
     public class GameWindow : MonoBehaviour
     {
-        private const string SampleScene = "SampleScene";
-        
+        [Header("Window")]
         [SerializeField]
         private LossingWindow _lossingWindow = null;
+        [SerializeField]
+        private WinWindow _winWindow = null;
 
         [SerializeField]
         private Button _restart = null;
@@ -16,16 +18,23 @@ namespace Project.Dev.Scripts
         private void Awake()
         {
             _restart.onClick.AddListener(Restart);
-            _lossingWindow.gameObject.SetActive(false);
         }
         private void OnEnable()
         {
-            BoardTiles.Lose += BoardTiles_Lose;
+            TileCounter.RemovedAllTiles += ScoreTile_RemovedAllTiles;
+            TileBoard.Lose += BoardTiles_Lose;
         }
-
+        
         private void OnDisable()
         {
-            BoardTiles.Lose -= BoardTiles_Lose;
+            TileBoard.Lose -= BoardTiles_Lose;
+            TileCounter.RemovedAllTiles -= ScoreTile_RemovedAllTiles;
+        }
+        
+        private void ScoreTile_RemovedAllTiles()
+        {
+            _restart.gameObject.SetActive(false);
+            _winWindow.OpenWindow();
         }
 
         private void BoardTiles_Lose()
@@ -36,7 +45,7 @@ namespace Project.Dev.Scripts
 
         private void Restart()
         {
-            SceneLoader.Load(SampleScene);
+            SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

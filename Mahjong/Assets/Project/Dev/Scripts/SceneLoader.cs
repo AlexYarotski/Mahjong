@@ -1,18 +1,25 @@
 ﻿using System.Threading.Tasks;
 using UnityEngine.SceneManagement;
 
-namespace Project.Dev.Scripts
+public static class SceneLoader
 {
-    public static class SceneLoader
+    public static async void Load(int sceneNumber)
     {
-        public static async void Load(string sceneName)
-        {
-            var loadSceneAsync = SceneManager.LoadSceneAsync(sceneName);
+        var loadSceneAsync = SceneManager.LoadSceneAsync(sceneNumber);
 
-            while (!loadSceneAsync.isDone)
-            {
-                await Task.Yield();
-            }
+        while (!loadSceneAsync.isDone)
+        {
+            await Task.Yield();
+        }
+    }
+
+    public static async void LoadNextScene()
+    {
+        var loadSceneAsync = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1) ?? SceneManager.LoadSceneAsync(0);
+        
+        while (!loadSceneAsync.isDone)
+        {
+            await Task.Yield();
         }
     }
 }

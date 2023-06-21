@@ -17,7 +17,7 @@ public class SelectTiles : MonoBehaviour
 
             if (Physics.Raycast(ray, out RaycastHit hitInfo, Int32.MaxValue, _layerMask))
             {
-                hitInfo.collider.GetComponent<Tiles>().Move();
+                hitInfo.collider.GetComponent<Tile>().Move();
             }
         }
     }

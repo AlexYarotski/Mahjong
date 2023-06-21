@@ -1,9 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Project.Dev.Scripts
+public class Level : MonoBehaviour
 {
-    public class Level : MonoBehaviour
-    {
-        
-    }
+
 }

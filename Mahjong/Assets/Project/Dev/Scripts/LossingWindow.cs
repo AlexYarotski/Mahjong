@@ -1,13 +1,11 @@
 using DG.Tweening;
-using Project.Dev.Scripts;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LossingWindow : MonoBehaviour
 {
-    private const string SampleScene = "SampleScene";
-    
     [SerializeField]
     private Image _background = null;
     [SerializeField]
@@ -19,11 +17,13 @@ public class LossingWindow : MonoBehaviour
     private void Awake()
     {
         _restart.onClick.AddListener(Restart);
+        
+        gameObject.SetActive(false);
     }
     
     private void Restart()
     {
         DOTween.KillAll();
-        SceneLoader.Load(SampleScene);
+        SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
     }
 }

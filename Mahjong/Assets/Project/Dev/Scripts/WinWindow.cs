@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class WinWindow : MonoBehaviour
 {
+    private const string LevelIndex = "LevelIndex";
+    
     private readonly Vector3 StartSize = new Vector3(1, 1, 1);
 
     [SerializeField]
@@ -18,6 +20,9 @@ public class WinWindow : MonoBehaviour
     private Button _restart = null;
     [SerializeField]
     private Button _nextLevel = null;
+
+    [SerializeField]
+    private SceneLoader _sceneLoader = null;
 
     private void Awake()
     {
@@ -40,11 +45,13 @@ public class WinWindow : MonoBehaviour
 
     private void Restart()
     {
-        SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
+        _sceneLoader.Load(SceneManager.GetActiveScene().name);
     }
 
     private void LoadNextLevel()
     {
-        SceneLoader.LoadNextScene();
+        PlayerPrefs.SetInt(LevelIndex, PlayerPrefs.GetInt(LevelIndex) + 1);
+        
+        _sceneLoader.LoadNextScene();
     }
 }

@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class TileBoard : MonoBehaviour
 {
+    public static event Action<Tile> MovedTile = delegate{  }; 
     public static event Action Lose = delegate { };
-    public static event Action ChoseTail = delegate { };
 
     private readonly List<Tile> TilesList = new List<Tile>();
 
@@ -22,6 +22,8 @@ public class TileBoard : MonoBehaviour
     public Vector3 GetPosition(Tile tile)
     {
         TilesList.Sort((x, y) => x.transform.position.x.CompareTo(y.transform.position.x));
+        
+        MovedTile(tile);
 
         TilesList.Add(tile);
 
@@ -70,8 +72,6 @@ public class TileBoard : MonoBehaviour
             {
                 if (quantityIdenticalTiles[i] == TilesList[j])
                 {
-                    ChoseTail();
-
                     TilesList[j].Disable();
                     TilesList.Remove(TilesList[j]);
                 }
@@ -129,7 +129,7 @@ public class TileBoard : MonoBehaviour
 
         for (int i = tilesOnBoard.Count - 1; i > indexLastIdenticalTile; i--)
         {
-            TilesList[i].transform.DOMove(PositionList[i + 1], _timeMovement);
+                TilesList[i].transform.DOMove(PositionList[i + 1], _timeMovement);
         }
     }
 

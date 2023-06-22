@@ -15,23 +15,26 @@ namespace Project.Dev.Scripts
         [SerializeField]
         private Button _restart = null;
 
+        [SerializeField]
+        private SceneLoader _sceneLoader = null;
+        
         private void Awake()
         {
             _restart.onClick.AddListener(Restart);
         }
         private void OnEnable()
         {
-            TileCounter.RemovedAllTiles += ScoreTile_RemovedAllTiles;
+            Level.RemovedAllTiles += Level_RemovedAllTiles;
             TileBoard.Lose += BoardTiles_Lose;
         }
         
         private void OnDisable()
         {
+            Level.RemovedAllTiles -= Level_RemovedAllTiles;
             TileBoard.Lose -= BoardTiles_Lose;
-            TileCounter.RemovedAllTiles -= ScoreTile_RemovedAllTiles;
         }
         
-        private void ScoreTile_RemovedAllTiles()
+        private void Level_RemovedAllTiles()
         {
             _restart.gameObject.SetActive(false);
             _winWindow.Open();
@@ -45,7 +48,7 @@ namespace Project.Dev.Scripts
 
         private void Restart()
         {
-            SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
+            _sceneLoader.Load(SceneManager.GetActiveScene().name);
         }
     }
 }

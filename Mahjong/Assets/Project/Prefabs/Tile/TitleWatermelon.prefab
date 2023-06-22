@@ -131,8 +131,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilesType: 3
   _tileBoard: {fileID: 0}
-  _timeAppearance: 0.5
-  _timeDecrease: 0.5
+  _timeLanding: 0.6
+  _timeDecrease: 0.3
+  _timeAppearanceColor: 0.5
+  _listUpperTiles: []
 --- !u!65 &3492098754432588789
 BoxCollider:
   m_ObjectHideFlags: 0

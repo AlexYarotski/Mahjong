@@ -1,14 +1,18 @@
 ﻿using System.Threading.Tasks;
 using DG.Tweening;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public static class SceneLoader
+public class SceneLoader : MonoBehaviour
 {
-    public static async void Load(int sceneNumber)
+    [SerializeField]
+    private LevelSettings _levelSettings = null;
+    
+    public async void Load(string sceneName)
     {
         DOTween.KillAll();
         
-        var loadSceneAsync = SceneManager.LoadSceneAsync(sceneNumber);
+        var loadSceneAsync = SceneManager.LoadSceneAsync(sceneName);
 
         while (!loadSceneAsync.isDone)
         {
@@ -16,12 +20,12 @@ public static class SceneLoader
         }
     }
 
-    public static async void LoadNextScene()
+    public async void LoadNextScene()
     {
         DOTween.KillAll();
-        
-        var loadSceneAsync = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1) ?? SceneManager.LoadSceneAsync(0);
-        
+
+        var loadSceneAsync = SceneManager.LoadSceneAsync(_levelSettings.GetSceneName());
+            
         while (!loadSceneAsync.isDone)
         {
             await Task.Yield();

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2394776953506524802}
   - component: {fileID: 2644159798404924524}
   - component: {fileID: 3899538456268898023}
+  - component: {fileID: 5970387882232981305}
   m_Layer: 6
   m_Name: TileCherry
   m_TagString: Untagged
@@ -48,8 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tilesType: 0
   _tileBoard: {fileID: 0}
-  _timeAppearance: 0.5
-  _timeDecrease: 0.5
+  _timeLanding: 0.6
+  _timeDecrease: 0.3
+  _timeAppearanceColor: 0.5
+  _listUpperTiles: []
 --- !u!65 &3899538456268898023
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63,6 +66,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 0.4, z: 1.4}
   m_Center: {x: 0, y: 0.15, z: 0}
+--- !u!33 &5970387882232981305
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068084877993769059}
+  m_Mesh: {fileID: 4068373912626513877, guid: d5315acc8fd9c4446bdf50a59ce80332, type: 3}
 --- !u!1 &3489002468617938717
 GameObject:
   m_ObjectHideFlags: 0

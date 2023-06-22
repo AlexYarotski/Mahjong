@@ -12,6 +12,9 @@ public class LossingWindow : MonoBehaviour
 
     [SerializeField]
     private Button _restart = null; 
+    
+    [SerializeField]
+    private SceneLoader _sceneLoader = null;
 
     private void Awake()
     {
@@ -22,6 +25,6 @@ public class LossingWindow : MonoBehaviour
     
     private void Restart()
     {
-        SceneLoader.Load(SceneManager.GetActiveScene().buildIndex);
+        _sceneLoader.Load(SceneManager.GetActiveScene().name);
     }
 }

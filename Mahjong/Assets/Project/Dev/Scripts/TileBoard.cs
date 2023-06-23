@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TileBoard : MonoBehaviour
 {
-    public static event Action<Tile> MovedTile = delegate{  }; 
+    public event Action<Tile> MovedTile = delegate{  }; 
     public static event Action Lose = delegate { };
 
     private readonly List<Tile> TilesList = new List<Tile>();
@@ -22,7 +22,7 @@ public class TileBoard : MonoBehaviour
     public Vector3 GetPosition(Tile tile)
     {
         TilesList.Sort((x, y) => x.transform.position.x.CompareTo(y.transform.position.x));
-        
+
         MovedTile(tile);
 
         TilesList.Add(tile);
@@ -37,7 +37,12 @@ public class TileBoard : MonoBehaviour
         }
 
         CheckLose(tile);
-            
+
+        if (TilesList.Count > PositionList.Count)
+        {
+            return PositionList[TilesList.Count - 2];
+        }
+        
         return PositionList[TilesList.Count - 1];
     }
 
@@ -58,8 +63,6 @@ public class TileBoard : MonoBehaviour
     private void RemoveIdenticalTile(List<Tile> quantityIdenticalTiles)
     {
         var tileIndex = TilesList.LastIndexOf(quantityIdenticalTiles[^1]);
-
-        float t = TilesList[tileIndex].transform.position.z - PositionList[tileIndex].z;
 
         if (TilesList[tileIndex].transform.position.z - PositionList[tileIndex].z > Mathf.Epsilon)
         {
@@ -85,13 +88,31 @@ public class TileBoard : MonoBehaviour
     {
         for (int i = 0; i < TilesList.Count; i++)
         {
-            if (TilesList[i].transform.position.x != PositionList[i].x)
+            if (TilesList[i].transform.position.x - PositionList[i].x > Mathf.Epsilon)
             {
                 TilesList[i].transform.DOMove(PositionList[i], _timeMovement);
             }
         }
     }
-
+    
+    private void MoveTilesToRight(Tile tile)
+    {
+        var tilesOnBoard = GetTilesOnBoardList();
+        var indexLastIdenticalTile = tilesOnBoard.FindLastIndex(tb => tb.TilesType == tile.TilesType);
+        
+        for (int i = tilesOnBoard.Count - 1; i > indexLastIdenticalTile; i--)
+        {
+            if (TilesList.Count > PositionList.Count)
+            {
+                TilesList[i].transform.DOMove(PositionList[i], _timeMovement);
+            }
+            else
+            {
+                TilesList[i].transform.DOMove(PositionList[i + 1], _timeMovement);
+            }
+        }
+    }
+    
     private bool CheckQuantityIdenticalTiles(List<Tile> quantityIdenticalTiles)
     {
         while (quantityIdenticalTiles.Count > _quantityTilesInPairs)
@@ -107,47 +128,6 @@ public class TileBoard : MonoBehaviour
         var isIdenticalTiles = GetTilesOnBoardList().FirstOrDefault(tb => tb.TilesType == tile.TilesType);
 
         return isIdenticalTiles != null;
-    }
-
-    private Vector3 GetPositionTiles(Tile tile)
-    {
-        var tilesOnBoard = GetTilesOnBoardList();
-        var indexLastIdenticalTile = tilesOnBoard.FindLastIndex(tb => tb.TilesType == tile.TilesType);
-
-        if (indexLastIdenticalTile == TilesList.Count - 1)
-        {
-            return PositionList[indexLastIdenticalTile];
-        }
-
-        return PositionList[indexLastIdenticalTile + 1];
-    }
-
-    private void MoveTilesToRight(Tile tile)
-    {
-        var tilesOnBoard = GetTilesOnBoardList();
-        var indexLastIdenticalTile = tilesOnBoard.FindLastIndex(tb => tb.TilesType == tile.TilesType);
-
-        for (int i = tilesOnBoard.Count - 1; i > indexLastIdenticalTile; i--)
-        {
-                TilesList[i].transform.DOMove(PositionList[i + 1], _timeMovement);
-        }
-    }
-
-    private List<Tile> GetTilesOnBoardList()
-    {
-        var tilesOnBoard = new List<Tile>();
-
-        for (var i = 0; i < TilesList.Count; i++)
-        {
-            if (i == TilesList.Count - 1)
-            {
-                break;
-            }
-
-            tilesOnBoard.Add(TilesList[i]);
-        }
-
-        return tilesOnBoard;
     }
     
     private void CheckLose(Tile tile)
@@ -177,5 +157,39 @@ public class TileBoard : MonoBehaviour
         }
 
         return false;
+    }
+
+    private Vector3 GetPositionTiles(Tile tile)
+    {
+        var tilesOnBoard = GetTilesOnBoardList();
+        var indexLastIdenticalTile = tilesOnBoard.FindLastIndex(tb => tb.TilesType == tile.TilesType);
+
+        if (indexLastIdenticalTile == TilesList.Count - 1)
+        {
+            return PositionList[indexLastIdenticalTile];
+        }
+        if (TilesList.Count > PositionList.Count)
+        {
+            return PositionList[indexLastIdenticalTile];
+        }
+
+        return PositionList[indexLastIdenticalTile + 1];
+    }
+
+    private List<Tile> GetTilesOnBoardList()
+    {
+        var tilesOnBoard = new List<Tile>();
+
+        for (var i = 0; i < TilesList.Count; i++)
+        {
+            if (i == TilesList.Count - 1)
+            {
+                break;
+            }
+
+            tilesOnBoard.Add(TilesList[i]);
+        }
+
+        return tilesOnBoard;
     }
 }

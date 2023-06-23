@@ -351,6 +351,8 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-analyzer:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/Configuration/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/Configuration/ConfigurationBuilder.cs"
 "Library/PackageCache/com.unity.services.core@1.6.0/Editor/Core/Configuration/IConfigurationProvider.cs"

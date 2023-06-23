@@ -14,6 +14,8 @@ public class Level : MonoBehaviour
 
     private void Awake()
     {
+        Application.targetFrameRate = 60;
+        
         PlayerPrefs.SetInt(LevelIndex, SceneManager.GetActiveScene().buildIndex);
         
         _componentsInChildren = GetComponentsInChildren<Tile>().ToList();

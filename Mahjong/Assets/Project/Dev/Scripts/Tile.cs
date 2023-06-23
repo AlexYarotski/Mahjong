@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using DG.Tweening;
 using UnityEngine;
 
@@ -27,7 +26,7 @@ public class Tile : MonoBehaviour
     
     public TilesType TilesType => _tilesType;
 
-    private Renderer _renderer = default;
+    private Renderer _renderer = null;
     
     private void Awake()
     {
@@ -41,26 +40,11 @@ public class Tile : MonoBehaviour
 
     private void OnEnable()
     {
-        TileBoard.MovedTile += TileBoard_MovedTile;
+        _tileBoard.MovedTile += TileBoard_MovedTile;
     }
     private void OnDisable()
     {
-        TileBoard.MovedTile -= TileBoard_MovedTile;
-    }
-    
-    private void TileBoard_MovedTile(Tile tile)
-    {
-        var upTile = _listUpperTiles.FirstOrDefault(ut => ut == tile);
-
-        if (upTile != null)
-        {
-            _listUpperTiles.Remove(upTile);
-        }
-
-        if (_listUpperTiles.Count == 0)
-        {
-            _renderer.material.DOColor(Color.white, _timeAppearanceColor);
-        }
+        _tileBoard.MovedTile -= TileBoard_MovedTile;
     }
     
     public void Move()
@@ -87,4 +71,13 @@ public class Tile : MonoBehaviour
         Disabled(this);
     }
     
+    private void TileBoard_MovedTile(Tile tile)
+    {
+        _listUpperTiles.Remove(tile);
+
+        if (_listUpperTiles.Count == 0)
+        {
+            _renderer.material.DOColor(Color.white, _timeAppearanceColor);
+        }
+    }
 }

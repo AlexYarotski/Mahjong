@@ -353,6 +353,8 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
+-analyzer:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
+-analyzer:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs"
 "Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs"
 "Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs"

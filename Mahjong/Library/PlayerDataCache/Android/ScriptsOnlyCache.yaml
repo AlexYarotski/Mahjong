@@ -2,12 +2,13 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Level
+    - LevelSettings
     - LossingWindow
+    - PlayerInput
     - Project.Dev.Scripts.GameWindow
-    - SelectTiles
+    - SceneLoader
     - Tile
     - TileBoard
-    - TileCounter
     - WinWindow
     DOTween.dll:
     - DG.Tweening.Core.DOTweenSettings
@@ -119,13 +120,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4266}
     - Class: 114
+      Script: {instanceID: 4472}
+    - Class: 114
       Script: {instanceID: 4546}
     - Class: 114
-      Script: {instanceID: 5252}
+      Script: {instanceID: 5250}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 5322}
     - Class: 114
-      Script: {instanceID: 5350}
+      Script: {instanceID: 5348}
+    - Class: 114
+      Script: {instanceID: 5792}
     - Class: 114
       Script: {instanceID: 5948}
     - Class: 114
@@ -137,9 +142,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7776}
     - Class: 114
-      Script: {instanceID: 8208}
-    - Class: 114
-      Script: {instanceID: 8228}
+      Script: {instanceID: 8226}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -200,11 +203,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 5252}
+      Script: {instanceID: 4472}
     - Class: 114
-      Script: {instanceID: 5324}
+      Script: {instanceID: 5250}
     - Class: 114
-      Script: {instanceID: 5350}
+      Script: {instanceID: 5322}
+    - Class: 114
+      Script: {instanceID: 5348}
+    - Class: 114
+      Script: {instanceID: 5792}
     - Class: 114
       Script: {instanceID: 5948}
     - Class: 114
@@ -216,9 +223,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7776}
     - Class: 114
-      Script: {instanceID: 8208}
-    - Class: 114
-      Script: {instanceID: 8228}
+      Script: {instanceID: 8226}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -720,6 +725,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 2cdd38535aadfbae2b6fc4a4ce4ba478
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneLoader
+  - hash:
+      serializedVersion: 2
       Hash: 75de60bccbd35c2e82026d4a60733734
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -852,7 +863,7 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 8266ce5b6a3415f5771d5d047953453a
+      Hash: 41e2bad77522f337dc76cade8f03133f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tile
@@ -876,7 +887,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 5f931937d60be53172bab89cfefec9ea
+      Hash: f4ad8d9576e85813afd8976f2e7785c6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinWindow
@@ -922,6 +933,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.State.dll
     namespaceName: Unity.VisualScripting
     className: StateGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 061cda7076b60ab7c0e0a06110ba2383
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LevelSettings
   - hash:
       serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
@@ -1152,13 +1169,13 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: c3963d7d118cf3f9ffcfcfcc4cecec63
+      Hash: c482dbf6e6db0a76a0dcf1754e0cdef8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: SelectTiles
+    className: PlayerInput
   - hash:
       serializedVersion: 2
-      Hash: 43210744ed13e0727d8edd65076af2ce
+      Hash: a52e575014802fa45e825b6578477ebd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LossingWindow
@@ -1230,19 +1247,13 @@ ScriptsOnlyBuild:
     className: VertexZoom
   - hash:
       serializedVersion: 2
-      Hash: bcd37ba414aefa1d607339cc45de3272
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TileCounter
-  - hash:
-      serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 4a984642df1052d365b086e0ecf5b672
+      Hash: 7803349645535ba7e97d801da33dc8e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: Project.Dev.Scripts
     className: GameWindow

@@ -369,7 +369,14 @@
         361,
         362,
         363,
-        364
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -8554,7 +8561,7 @@
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/build.gradle_o217.info",
       "ActionType": "WriteTextFile",
-      "WriteTextFilePayload": "{\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles+Arguments\":{\"ProjectPath\":\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle\",\"Architectures\":\"ARMv7\",\"BuildSystem\":\"Gradle\",\"GradleProjectCreateInfo\":{\"HostPlatform\":\"Windows\",\"ApplicationType\":\"APK\",\"BuildType\":\"Release\",\"AndroidSDKPath\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\\\\2021.3.16f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\",\"AndroidNDKPath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\",\"PreferredHeapSizeForJVM\":4096,\"GradleVersion\":\"6.1.1\",\"UnityLibraryTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\mainTemplate.gradle\",\"LauncherTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\launcherTemplate.gradle\",\"BaseProjectTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\baseProjectTemplate.gradle\",\"GradlePropertiesTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\gradleTemplate.properties\",\"GradleLibraryTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\libTemplate.gradle\",\"ProguardUserPath\":\"\",\"SettingsTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\settingsTemplate.gradle\",\"BuildTools\":\"30.0.2\",\"TargetSDKVersion\":30,\"MinSDKVersion\":22,\"PackageName\":\"com.DefaultCompany.Mahjong\",\"Architectures\":\"ARMv7\",\"BuildApkPerCpuArchitecture\":false,\"VersionCode\":1,\"VersionName\":\"0.1\",\"Minify\":0,\"NoCompressOptions\":{\"RelativeFilePaths\":[],\"FileExtensions\":[]},\"UseCustomKeystore\":false,\"KeystorePath\":\"\",\"KeystoreName\":\"\",\"KeystorePassword\":\"\",\"KeystoreAliasName\":\"\",\"KeystoreAliasPassword\":\"\",\"ScriptingImplementation\":\"Mono\",\"AndroidLibraries\":[],\"AARFiles\":[],\"BuiltinJavaSourcePaths\":[\"com/unity3d/player/UnityPlayerActivity.java\"],\"JavaSourcePaths\":[],\"KotlinSourcePaths\":[],\"PlayerPackage\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer\",\"PlayerPackageTools\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\",\"SymlinkSources\":false,\"InstallIntoBuildsFolder\":false,\"UnityPath\":\"\",\"UnityProjectPath\":\"D:/Mahj/Mahjong\",\"Dependencies\":[]}},\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles\",\"methodName\":\"Run\",\"assemblyLocation\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\\\\2021.3.16f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\AndroidPlayerBuildProgram.exe\",\"targets\":[\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/build.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/gradle.properties\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/local.properties\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/settings.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/gradle/wrapper/gradle-wrapper.properties\"],\"inputs\":[\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/baseProjectTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/libTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle\"],\"targetDirectories\":[]}}",
+      "WriteTextFilePayload": "{\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles+Arguments\":{\"ProjectPath\":\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle\",\"Architectures\":\"ARMv7\",\"BuildSystem\":\"Gradle\",\"GradleProjectCreateInfo\":{\"HostPlatform\":\"Windows\",\"ApplicationType\":\"APK\",\"BuildType\":\"Release\",\"AndroidSDKPath\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\\\\2021.3.16f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\",\"AndroidNDKPath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\",\"PreferredHeapSizeForJVM\":4096,\"GradleVersion\":\"6.1.1\",\"UnityLibraryTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\mainTemplate.gradle\",\"LauncherTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\launcherTemplate.gradle\",\"BaseProjectTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\baseProjectTemplate.gradle\",\"GradlePropertiesTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\gradleTemplate.properties\",\"GradleLibraryTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\libTemplate.gradle\",\"ProguardUserPath\":\"\",\"SettingsTemplatePath\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\settingsTemplate.gradle\",\"BuildTools\":\"30.0.2\",\"TargetSDKVersion\":30,\"MinSDKVersion\":22,\"PackageName\":\"com.DefaultCompany.Mahjong\",\"Architectures\":\"ARMv7\",\"BuildApkPerCpuArchitecture\":false,\"VersionCode\":1,\"VersionName\":\"1\",\"Minify\":0,\"NoCompressOptions\":{\"RelativeFilePaths\":[],\"FileExtensions\":[]},\"UseCustomKeystore\":false,\"KeystorePath\":\"\",\"KeystoreName\":\"\",\"KeystorePassword\":\"\",\"KeystoreAliasName\":\"\",\"KeystoreAliasPassword\":\"\",\"ScriptingImplementation\":\"Mono\",\"AndroidLibraries\":[],\"AARFiles\":[],\"BuiltinJavaSourcePaths\":[\"com/unity3d/player/UnityPlayerActivity.java\"],\"JavaSourcePaths\":[],\"KotlinSourcePaths\":[],\"PlayerPackage\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer\",\"PlayerPackageTools\":\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\",\"SymlinkSources\":false,\"InstallIntoBuildsFolder\":false,\"UnityPath\":\"\",\"UnityProjectPath\":\"D:/Mahj/Mahjong\",\"Dependencies\":[]}},\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles\",\"methodName\":\"Run\",\"assemblyLocation\":\"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\\\\2021.3.16f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\AndroidPlayerBuildProgram.exe\",\"targets\":[\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/build.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/build.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/build.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/gradle.properties\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/local.properties\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/settings.gradle\",\"D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/gradle/wrapper/gradle-wrapper.properties\"],\"inputs\":[\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/baseProjectTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/libTemplate.gradle\",\"C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle\"],\"targetDirectories\":[]}}",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/build.gradle_o217.info"
@@ -8741,59 +8748,136 @@
       "DebugActionIndex": 346
     },
     {
-      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-anydpi-v26/app_icon.xml"
-      ],
-      "Outputs": [
-        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml"
-      ],
-      "DebugActionIndex": 347
-    },
-    {
-      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-anydpi-v26/app_icon_round.xml"
-      ],
-      "Outputs": [
-        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
-      ],
-      "DebugActionIndex": 348
-    },
-    {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-mdpi/app_icon.png"
+        "Temp/StagingArea/res.mdpi.app_icon.png"
       ],
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png"
       ],
+      "DebugActionIndex": 347
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.ldpi.app_icon.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon.png"
+      ],
+      "DebugActionIndex": 348
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.hdpi.app_icon.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon.png"
+      ],
       "DebugActionIndex": 349
     },
     {
-      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png",
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-mdpi/ic_launcher_background.png"
+        "Temp/StagingArea/res.xhdpi.app_icon.png"
       ],
       "Outputs": [
-        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png"
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon.png"
       ],
       "DebugActionIndex": 350
     },
     {
-      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Apk/res/mipmap-mdpi/ic_launcher_foreground.png"
+        "Temp/StagingArea/res.xxhdpi.app_icon.png"
       ],
       "Outputs": [
-        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon.png"
       ],
       "DebugActionIndex": 351
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.xxxhdpi.app_icon.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon.png"
+      ],
+      "DebugActionIndex": 352
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.ldpi.app_icon_round.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-ldpi/app_icon_round.png"
+      ],
+      "DebugActionIndex": 353
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.mdpi.app_icon_round.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon_round.png"
+      ],
+      "DebugActionIndex": 354
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.hdpi.app_icon_round.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-hdpi/app_icon_round.png"
+      ],
+      "DebugActionIndex": 355
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.xhdpi.app_icon_round.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xhdpi/app_icon_round.png"
+      ],
+      "DebugActionIndex": 356
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.xxhdpi.app_icon_round.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxhdpi/app_icon_round.png"
+      ],
+      "DebugActionIndex": 357
+    },
+    {
+      "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Temp/StagingArea/res.xxxhdpi.app_icon_round.png"
+      ],
+      "Outputs": [
+        "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/launcher/src/main/res/mipmap-xxxhdpi/app_icon_round.png"
+      ],
+      "DebugActionIndex": 358
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so",
@@ -8804,7 +8888,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmain.so"
       ],
-      "DebugActionIndex": 352
+      "DebugActionIndex": 359
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so",
@@ -8815,7 +8899,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libunity.so"
       ],
-      "DebugActionIndex": 353
+      "DebugActionIndex": 360
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmonobdwgc-2.0.so",
@@ -8826,7 +8910,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmonobdwgc-2.0.so"
       ],
-      "DebugActionIndex": 354
+      "DebugActionIndex": 361
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libMonoPosixHelper.so",
@@ -8837,7 +8921,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libMonoPosixHelper.so"
       ],
-      "DebugActionIndex": 355
+      "DebugActionIndex": 362
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmono-native.so",
@@ -8848,7 +8932,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/jniLibs/armeabi-v7a/libmono-native.so"
       ],
-      "DebugActionIndex": 356
+      "DebugActionIndex": 363
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info",
@@ -8859,7 +8943,7 @@
         "Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 357
+      "DebugActionIndex": 364
     },
     {
       "Annotation": "Generate Manifests Library/Bee/artifacts/Android/Manifest/LauncherManifestDiag.txt (+3 others)",
@@ -9099,11 +9183,11 @@
         326,
         328,
         330,
-        357
+        364
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 358
+      "DebugActionIndex": 365
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmain.so",
@@ -9114,7 +9198,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmain.so"
       ],
-      "DebugActionIndex": 359
+      "DebugActionIndex": 366
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmonobdwgc-2.0.so",
@@ -9125,7 +9209,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libmonobdwgc-2.0.so"
       ],
-      "DebugActionIndex": 360
+      "DebugActionIndex": 367
     },
     {
       "Annotation": "CopyFiles D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libunity.so",
@@ -9136,7 +9220,7 @@
       "Outputs": [
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/symbols/armeabi-v7a/libunity.so"
       ],
-      "DebugActionIndex": 361
+      "DebugActionIndex": 368
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_59dx.info",
@@ -9147,7 +9231,7 @@
         "Library/Bee/artifacts/csharpactions/unity_app_guid_59dx.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 362
+      "DebugActionIndex": 369
     },
     {
       "Annotation": "GuidGenerator D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid",
@@ -9280,11 +9364,11 @@
         "D:/Mahj/Mahjong/Library/Bee/Android/Prj/Mono2x/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid"
       ],
       "ToBuildDependencies": [
-        362
+        369
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 363
+      "DebugActionIndex": 370
     },
     {
       "Annotation": "Player",
@@ -9538,11 +9622,18 @@
         354,
         355,
         356,
+        357,
         358,
-        363
+        359,
+        360,
+        361,
+        362,
+        363,
+        365,
+        370
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 364
+      "DebugActionIndex": 371
     }
   ],
   "FileSignatures": [
@@ -9849,7 +9940,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 364
+          "Player": 371
         }
 ,  "DefaultNodes": [
     0

@@ -1,11 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameWindow
     - Level
     - LevelSettings
     - LossingWindow
     - PlayerInput
-    - Project.Dev.Scripts.GameWindow
     - SceneLoader
     - Tile
     - TileBoard
@@ -1175,7 +1175,7 @@ ScriptsOnlyBuild:
     className: PlayerInput
   - hash:
       serializedVersion: 2
-      Hash: a52e575014802fa45e825b6578477ebd
+      Hash: c54e7b179b1281bc97730ff956d3378c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LossingWindow
@@ -1255,7 +1255,7 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 7803349645535ba7e97d801da33dc8e8
     assemblyName: Assembly-CSharp.dll
-    namespaceName: Project.Dev.Scripts
+    namespaceName: 
     className: GameWindow
   - hash:
       serializedVersion: 2

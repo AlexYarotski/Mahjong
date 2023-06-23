@@ -338,8 +338,6 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/ApplicationDataPath.cs"
 "Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/AssetMenu/AssetFilesFilterPatternsMenuBuilder.cs"

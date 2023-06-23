@@ -354,8 +354,6 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Assets/Project/Dev/Scripts/Level.cs"
 "Assets/Project/Dev/Scripts/LevelSettings.cs"
 "Assets/Project/Dev/Scripts/Menu/GameWindow.cs"
